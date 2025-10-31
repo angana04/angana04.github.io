@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      
+      a, a:visited {
+        color: rgb(213, 212, 203); 
+        text-decoration: none;
+    }
+
+      a:hover { 
+        color: white; 
+    }
+    
+      a:active { 
+        color: rgb(245, 239, 239); 
+    }
+
+      body {
+        margin: 0;
+        font-family: "Poppins", Helvetica, sans-serif;
+        background-color: black;
+        color: rgb(239, 235, 230);
+        line-height: 1.8;
+    }
+
+      .nav_bar {
+        text-align: center;
+        background-color: black;
+    }
+
+      .nav_buttons {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        color: rgb(213, 212, 203);
+        font-size: 10pt;
+        background-color: black;
+        width: 100px;
+        cursor: pointer;
+    }
+
+      .nav_buttons a { 
+        display: block; color: inherit; 
+    }
+
+      .nav_buttons:hover { 
+        background-color: rgb(38, 31, 31); 
+        color: white; 
+    }
+
+      .nav_buttons:active { 
+        background-color: rgb(27, 26, 26); 
+        color: rgb(245, 239, 239); 
+    }
+
+      .about1 {
+        padding: 80px 6vw 150px;
+        font-size: 10.5pt;
+    }
+  
+      .about1 .text {
+        flex: 1;
+        max-width: 550px;             
+        min-width: 280px;           
+    }
+
+      .about1 h2 {
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+      .about1 > div {                        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        margin: 50px 60px;
+        line-height: 1.8;
+    }
+
+      .about1 > div:nth-child(even) {       /* highlighted */
+        flex-direction: row-reverse;
+    }
+
+      .about1 p, .about1 ul {
+        flex: 1;
+        max-width: 550px;
+    }
+
+      .about1 img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+      .about1 video{
+        max-width: 600px;   
+        width: 100%;        /* so window shrinks -> check once devops*/
+        height: auto;  
+        flex-shrink: 0;     
+        display: block;     
+        margin: 0 auto;     /* center? */
+        border-radius: 8px;
+    }
+
+      .home2 {
+        background-color: rgb(22, 21, 21); 
+        color: rgb(247, 246, 244);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 8pt;
+        /* opacity: 0.9; */
+        margin-top: 0px; 
+        line-height: 1.5;
+        width: 100%;
+        padding: 20px 0px; 
+        word-spacing: 150px;
+    }
+    
+    /* Highlighted */
+    @media (max-width: 900px){
+        .about1 > div {
+            flex-direction: column !important; 
+            text-align: center;
+            gap: 30px;                        
+        }
+
+        .about1 .text, .about1 img,.about1 video {
+            width: 100%;       
+            max-width: none;   
+        }
+
+        .about1 img,
+        .about1 video {
+            height: auto;     
+        }
+
+        .about1 .text {
+            text-align: left;  
+        }
+    }
+    </style>
+  </head>
+
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_buttons" id="home"><a href="index.html">Home</a></div>
+      <div class="nav_buttons" id="about"><a href="about.html">About Me</a></div>
+      <div class="nav_buttons" id="resume"><a href="resume.html">Resume</a></div>
+      <div class="nav_buttons" id="projects"><a href="projects.html">Projects</a></div>
+    </nav>
+
+    <div class="about1">
+
+      <div class="background">
+        <div class="text">
+        <h2>Background</h2>
+        <p>
+            I’m a senior at San Diego State University majoring in Management Information Systems.
+            I was born and raised in India, a country that thrives on diversity, innovation, and resilience.
+            Growing up in a fast-changing environment taught me to adapt quickly, stay curious, and find creative ways to solve problems.
+        </p>
+        <p>
+            Moving to the United States at the age of seventeen for college opened my perspective even more,
+            helping me understand how technology and data connect people across different cultures and industries.
+        </p>
+        </div>
+        <img src="image&video/sdsu.jpg" alt="sdsu">
+      </div>
+
+
+      <div class="home">
+        <div class="text">
+        <h2>A Little About My Home</h2>
+        <p>
+            India has always been more than just where I grew up, it’s a part of who I am.
+            The country’s diversity, colors, traditions, and energy constantly inspire me to stay open-minded and curious.
+            Growing up surrounded by such a mix of cultures taught me the importance of community, empathy, and creativity.
+            No matter where I go, the values I learned in India continue to guide how I think, work, and connect with others.
+        </p>
+        <p>
+            A little fun fact about my hometown, Ahmedabad- Narendra Modi Stadium, the largest in the world, is located here! 
+            <br> <br>
+            It is also recongnized for it's extravagant celebration for the festival of Navratri!
+        </p>
+        </div>
+        <video autoplay loop muted playsinline> 
+            <source src="image&video/home.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="purpose">
+        <div class="text">
+        <h2>Purpose</h2>
+        <p>
+          I want to use data and technology to make a difference.
+          To me, analytics isn’t just about numbers. It’s about uncovering insights that help people and organizations make smarter, more human-centered decisions.
+          Whether it’s improving a business process, enhancing user experience, or telling a story through data, I’m driven by the idea of turning information into action.
+        </p> 
+        <p>
+          Here's a picture from my presentation for my first real-world project with the Filmmakers Collaborative SF!
+        </p>
+        </div>
+        <img src="image&video/purpose.jpeg" alt="purpose">
+      </div>
+
+      <div class="now">
+        <div class="text">
+        <h2>What I'm Doing Now</h2>
+        <p>
+          I’m currently interning at HERC Jobs, where I assist in managing and analyzing higher education recruitment data.
+          My work involves identifying hiring trends, improving data accuracy, and supporting initiatives that promote diversity and inclusion in academic hiring.
+        </p>
+        <p>
+            This experience has helped me grow as a problem solver while reinforcing my interest in data-driven decision-making and social impact.
+        </p>
+        </div>
+        <img src="image&video/now.jpeg" alt="now" >
+      </div>
+
+      <div class="love">
+        <div class="text">
+        <h2>What I Love</h2>
+        <p>
+          Outside of academics, I’m an outdoorsy person who loves going on hikes, being creative with art and crafts, and baking in my free time.
+          I’m always up for traveling, exploring new places and trying new experiences.
+        </p>
+        <p>Some of my favorite places I’ve visited are:</p>
+        <ul>
+          <li>Tanzania - the wildlife there is absolutely beautiful!</li>
+          <li>London - the way it lights up during Christmas is really something else</li>
+          <li>Kashmir - just so magical and serene</li>
+        </ul>
+        <p>
+          I love connecting with people from different backgrounds and learning about their cultures.
+          That passion is what led me to become the Vice President of DEI for The Women's Network at SDSU.
+        </p>
+        <p> 
+            My motto is: “Creativity keeps you grounded, while curiosity keeps you moving forward.” 
+        </p>
+        </div>
+        <video autoplay loop muted playsinline>
+            <source src="image&video/love.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+     <footer>
+        <div class="home2">
+          <h3>
+               <a href="https://www.linkedin.com/in/angana-shah" target="_blank">LinkedIn</a> 
+                <a href="https://www.instagram.com/angana_04?igsh=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">Instagram</a> 
+                <a href="mailto:ashah4461@sdsu.edu">Email</a>
+          </h3>
+        </div>
+    </footer>
+  </body>
+</html>

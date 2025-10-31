@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      
+      a, a:visited { 
+        color: rgb(213, 212, 203); 
+        text-decoration: none; 
+    }
+
+      a:hover { 
+        color: white; 
+    }
+      
+      a:active { 
+        color: rgb(245, 239, 239); 
+    }
+
+      body {
+        margin: 0;
+        font-family: "Poppins", Helvetica, sans-serif;
+        background-color: black;                
+        color: rgb(239, 235, 230);             
+    }
+
+
+      .nav_bar {
+        text-align: center; 
+        background-color: black; 
+    }
+
+      .nav_buttons {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        color: rgb(213, 212, 203);
+        font-size: 10pt;
+        background-color: black;
+        width: 100px;
+        cursor: pointer;
+    }
+
+      .nav_buttons a { 
+        display: block; 
+        color: inherit; 
+    }
+
+      .nav_buttons:hover { 
+        background-color: rgb(38, 31, 31); color: white; 
+    }
+
+      .nav_buttons:active { 
+        background-color: rgb(27, 26, 26); color: rgb(245, 239, 239); 
+    }
+
+      h3, strong {
+        color: #fff;
+        margin-left: 20px
+    }
+
+      li {
+        margin-left: 40px;
+        font-size: 10.5pt;
+    }
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+        /* gap: 80px; */           /* between sections  */
+        font-size: 10.5pt;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 40px;
+    }
+
+      img {
+        width: 700px;
+        height: auto;
+        margin-left: 120px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+      video {
+        width: 800px;
+        height: auto;
+        margin-left: 90px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+      .p1, .p2 {
+        margin-bottom: 60px;
+    }
+
+      .home2 {
+        background-color: rgb(22, 21, 21); 
+        color: rgb(247, 246, 244);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 8pt;
+        /* opacity: 0.9; */
+        margin-top: 0px; 
+        line-height: 1.5;
+        max-width: 100vw;
+        width: 100%;
+        padding: 20px 0px; 
+        word-spacing: 150px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_buttons" id="home"><a href="index.html">Home</a></div>
+      <div class="nav_buttons" id="about"><a href="about.html">About Me</a></div>
+      <div class="nav_buttons" id="resume"><a href="resume.html">Resume</a></div>
+      <div class="nav_buttons" id="project"><a href="projects.html">Projects</a></div>
+    </nav>
+
+    <div class="projects">
+
+      <div class="p1">
+      <h3>
+        Personal Professional Website
+      </h3>
+      <strong>Fall 2025, SDSU</strong>
+      <ul>
+        <li>
+          Designed and developed a personal portfolio website using HTML5 and CSS3 to display academic background, 
+          projects, and professional experience in a clear, responsive layout.
+        </li>
+        <li> 
+          Implemented structured subpages for about, resume, and projects while ensuring consistent alignment, spacing, and r
+          eadability across different screen sizes.
+        </li>
+      </ul>
+      </div>
+
+      <div class="p2">
+      <h3>
+        Movie Database Design & SQL Implementation 
+      </h3>
+      <strong>Spring 2025, SDSU</strong>
+      <ul>
+        <li>
+          Created a normalized schema with 6+ interrelated tables using UML diagrams and applied 1NF–3NF normalization 
+          & developed SQL views and complex queries to generate valuable insights and visualizations with interpretation.
+        </li>
+        <li> 
+          Delivered a live demonstration presenting schema design, import of standardized unstructured data from Excel & querying.
+        </li>
+      </ul>
+      <br>
+      <a href="https://docs.google.com/document/d/1hEm0u9hYF1TRKO4p72jzjOBuZT0Md1wo0poFf4JUUx8/edit?usp=sharing" target="_blank">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <strong><em><u>
+          Click here to view!
+        </u></em></strong>
+      </a>
+      </div>
+      
+      <div class="p3">
+      <h3>
+        Business Analyst Team Project • Filmmakers Collaborative SF   
+      </h3>
+      <strong>Spring 2025, SDSU</strong>
+      <ul>
+        <li>
+          Conducted interviews, enterprise analysis, SWOT, & KPI benchmarking to inform technology recommendations.
+        </li>
+        <li> 
+          Researched 7 SaaS CRM tools; recommended Bloomerang for automation, AI-driven insights, & QuickBooks integration 
+          within the allocated budget with a projected 500% ROI and 2 month payback period, 40% reduction in admin time.
+        </li>
+        <li>
+          Delivered a professional report with UML diagrams, PERT chart, and implementation plan; solutions to the client.
+        </li>
+      </ul>
+      <img src="image&video/mis306.jpg" alt="mis306">
+      </div>
+
+      <div class="p4">
+      <h3>
+        Founder • Vaarso 
+      </h3>
+      <strong>January 2022 - July 2022,  IND</strong>
+      <ul>
+        <li> 
+          Collected over INR 50K in donations to fund the educational resources & initiatives by selling 100+ products from the stalls that 
+          employed underprivileged women who lost jobs due to the Covid-19 by mobilizing resources from sponsors.
+        </li>
+        <li>
+          Collaborated with different organizations and organized an online session to donate 250+ books to the children.
+        </li>
+      </ul>
+      <video autoplay loop muted playsinline>
+            <source src="image&video/vaarso.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+    </div>
+
+    <footer>
+        <div class="home2">
+          <h3>
+               <a href="https://www.linkedin.com/in/angana-shah" target="_blank">LinkedIn</a> 
+                <a href="https://www.instagram.com/angana_04?igsh=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">Instagram</a> 
+                <a href="mailto:ashah4461@sdsu.edu">Email</a>
+          </h3>
+        </div>
+    </footer>
+
+  </body>
+</html>

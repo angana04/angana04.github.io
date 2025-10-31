@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    
+    a, a:visited {
+      color: rgb(213, 212, 203); 
+      text-decoration: none;
+  }
+
+    a:hover { 
+      color: white; }
+      a:active { color: rgb(245, 239, 239); 
+  }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Helvetica, sans-serif;
+      font-size: 10.5pt;
+      background-color: black;
+      color: rgb(239, 235, 230);
+      line-height: 1.8;
+  }
+
+    .nav_bar {
+      text-align: center;
+      background-color: black;
+  }
+
+    .nav_buttons {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      color: rgb(213, 212, 203);
+      font-size: 10pt;
+      background-color: black;
+      width: 100px;
+      cursor: pointer;
+  }
+
+    .nav_buttons a { 
+      display: block; color: inherit; 
+  }
+
+    .nav_buttons:hover { 
+      background-color: rgb(38, 31, 31); 
+      color: white; 
+  }
+
+    .nav_buttons:active { 
+      background-color: rgb(27, 26, 26); 
+      color: rgb(245, 239, 239); 
+  }
+
+    .resume {
+      display: flex;
+      flex-direction: column;
+      /* gap: 80px; */
+      row-gap: 80px;     /* between sections  */
+      font-size: 10.5pt;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 40px;
+  }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.3); /* ← changed: lighter visible underline */
+      padding-bottom: 10px;
+  }
+
+    h3 {
+      color:#fff;
+  }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      margin: 20px 0px 0px;
+  }
+
+    caption {
+      text-align: left;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 8px;
+  }
+
+    td {
+      padding: 6px 12px;
+      vertical-align: top;
+      width: 25%;          
+  }
+
+    ul {
+      margin: 0px 0 25px 30px;
+      padding: 0;
+      flex: 1;
+      max-width: 900px;
+  }
+    
+    li {
+      margin-left: 35px;
+      margin-bottom: 5px;
+      font-size: 10.5pt;
+  }
+    
+    strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+  }
+
+    .home2 {
+      background-color: rgb(22, 21, 21); 
+      color: rgb(247, 246, 244);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 8pt;
+      margin-top: 0px; 
+      line-height: 1.5;
+      max-width: 100vw;
+      width: 100%;
+      padding: 20px 0px; 
+      word-spacing: 150px;
+  }
+
+    /* Highlighted */
+    @media (max-width: 900px) {
+    
+      .resume {
+        padding: 0 20px;
+      }
+      
+      table td {
+        width: 50%;      
+      }
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_buttons" id="home"><a href="index.html">Home</a></div>
+      <div class="nav_buttons" id="about"><a href="about.html">About Me</a></div>
+      <div class="nav_buttons" id="resume"><a href="resume.html">Resume</a></div>
+      <div class="nav_buttons" id="projects"><a href="projects.html">Projects</a></div>
+    </nav>
+
+    <div class="resume">
+
+      <div class="section1">
+      <h2>Education</h2>
+        <p>
+          <strong>Bachelors of Science in Business Administration, Information Systems</strong> May 2026 
+          <br>
+          <strong>San Diego State University</strong> CGPA - 3.57 
+          <br>
+          <strong>Dean’s list for Academic Excellence </strong> (Fall 2022 to Spring 2024)
+          <br>
+          <strong>Relevant Coursework:</strong>
+                Database Management Systems <em>(MIS 380);</em>
+                E-Business/Web Development <em>(MIS 481);</em>
+                Programming for Data Driven Applications <em>(MIS 515);</em>
+                Networks and Data Communication <em>(MIS 383);</em>
+                Information Systems Analysis & Design <em>(MIS 306);</em>
+                Business Application Programming <em>(MIS 315);</em>
+                Statistical Analysis for Business <em>(MIS 301);</em>
+                Operations & Supply Chain Mangement <em>(BA 360);</em>
+                Principles of Marketing <em>(BA 370);</em>
+                Financial & Managerial Accounting <em>(ACCTG 201 & 202);</em>
+                The Legal Environment of Finance <em>(FIN 240);</em>
+                Business Writing <em>(RWS 390W);</em>
+          </p>
+      </div>
+
+
+      <div class="section2">
+        <h2>Skills and Certifications</h2>
+          <table>
+            <caption> Tech Skills </caption>
+            <tr>
+            <th></th> 
+            </tr>
+                <tr>
+                <td>> Python</td><td>> SQL</td><td>> Power BI</td><td>> HTML</td>
+                </tr>
+                <tr>
+                <td>> Tableau</td><td>> JavaScript</td><td>> CSS</td><td>> Excel</td>
+                </tr>
+                <tr>
+                <td>> Django</td><td>> Canva</td><td>> Adobe</td><td>> Microsoft & Google Suite</td>
+                </tr>
+            </tr>
+          </table>
+
+          <table>
+            <caption> Soft Skills </caption>
+            <tr>
+            <th></th> 
+            </tr>
+                <tr>
+                <td>> Analytical Skills</td><td>> Trilingual</td><td>> Quick Learner</td><td>> Collaboration</td>
+                </tr>
+                <tr>
+                <td>> Independent</td><td>> Opportunist</td><td>> Professionalism</td><td></td>
+                </tr>
+            </tr>
+          </table>
+                
+          <table>
+            <caption> Certifications </caption>
+            <tr>
+            <th></th> 
+            </tr>
+              <tr>
+                <td>> AAAI microcredential SDSU</td><td>> Fundamentals of SQL (DataCamp)</td><td></td><td></td>
+              </tr>
+          </table>
+          
+          <p style="color: black">  
+            ----- 
+          </p>
+        <br><br>
+      </div>
+
+
+      <div class="section3">
+        <h2>Experience</h2>
+        <br>
+        <ul>
+        <strong>Data Analytics | Business Administration Intern •  HERC Jobs  
+        <br> Sep 2025 - Present, San Diego, CA </strong>
+          <li>Analyzing applicant and recruitment data to identify trends, patterns, and areas for improvement in staff and faculty hiring.</li>
+          <li>Cleaning, preparing, and validating datasets to ensure accuracy, consistency, and data-driven reporting.</li>
+          <li>Building interactive Power BI dashboards to visualize KPI metrics, recruitment funnels, and year-over-year trends.</li>
+          <li>Supporting strategic decision-making through insights that enhance organizational efficiency and diversity.</li>
+        </ul>
+
+        <ul>
+          <strong>Finance Data Analyst Intern •  Adani Group 
+          <br> May 2025 - June 2025,  IND </strong>
+            <li>Gained hands-on experience in financial processes, real-time analytics, and Excel-based reporting.</li>
+            <li>Conducted budget forecasting and trend analysis to inform strategic planning and business growth.</li>
+            <li>Utilized SQL to filter and organize data, and Excel for KPI visualization, enhancing reporting efficiency.</li>
+        </ul>
+
+        <ul>
+          <strong>Teaching Assistant • SDSU 
+          <br> May 2025 -June 2025, SDSU</strong>
+            <li>Supported faculty in managing coursework, communication, and materials for summer sessions of 30+ students.</li>
+            <li>Conducted weekly office hours to guide students and answer any queries.</li>
+        </ul>
+
+        <ul>
+          <strong>Desk Assistant • SDSU Housing Administration
+          <br> September  2023 - May 2025, CA</strong> 
+            <li>Utilized organizational skills to maintain orderly filing systems, facilitating easy access to essential documents.</li>
+            <li>Ensured accuracy in record management through data entry while assisting w/ various administrative tasks.</li>
+        </ul>
+
+        <ul>
+          <strong>Job Shadowing • Supratech Neuberg
+          <br>May  2023 -July 2023, IND</strong>    
+            <li>Worked at the Histopathology department; performed hands-on tasks such as laboratory work, taking observations.</li>
+            <li>Analyzed and processed data to identify potential problems, & strategized  efficient solutions to improve efficiency.</li>
+        </ul>
+
+        <ul>
+          <strong>Observership • Apex Heart Institute 
+          <br> June 2023 - July 2023, Gujarati, IND </strong>
+            <li>Acquired hands-on experience in data entry techniques, ensuring accuracy and efficiency in information processing.</li>
+            <li>Developed proficiency in utilizing relevant software and tools for data entry and management tasks.</li>
+            <li>Participated in team discussions, training sessions, enhancing understanding of data entry  practices & techniques.</li>
+            <li>Adapted quickly to new tasks and responsibilities, showcasing flexibility and a willingness to learn.</li>
+        </ul>
+
+        <p style="color: black">
+        -----
+        </p>
+        </div>
+
+
+        <div class="section4">
+          <h2>Involvement</h2>
+            <h3>SDSU The Women’s Network</h3> 
+              <p> Vice President of DEI                
+               <br> May 2025 - Present
+               <br> Lead DEI strategy and initiatives for the SDSU chapter of TWN, fostering inclusivity, building campus partnerships, 
+                    and ensuring programming reflects equity and belonging.
+                </p>
+
+            <h3>SDSU Women In Business</h3>                     
+              <p> January 2024 - Present
+                <br>Active Member  
+              </p>
+
+
+            <h3>Association of Information Technology Professionals SDSU</h3>  
+              <p>August 2023 - Present
+                <br>Active Member 
+              </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="home2">
+          <h3>
+               <a href="https://www.linkedin.com/in/angana-shah" target="_blank">LinkedIn</a> 
+                <a href="https://www.instagram.com/angana_04?igsh=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">Instagram</a> 
+                <a href="mailto:ashah4461@sdsu.edu">Email</a>
+          </h3>
+        </div>
+    </footer>
+  </body>
+</html>
